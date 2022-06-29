@@ -1,4 +1,3 @@
-import 'package:algoriza_task1/Registeration/login_screen.dart';
 import 'package:algoriza_task1/Registeration/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,17 +17,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
-          systemOverlayStyle:
-              SystemUiOverlayStyle(
-                statusBarColor: Colors.white,
-                  statusBarBrightness: Brightness.dark,
-                statusBarIconBrightness: Brightness.dark,
-              ),
-          elevation: 0
-        ),
+            systemOverlayStyle: SystemUiOverlayStyle(
+              statusBarColor: Colors.white,
+              statusBarBrightness: Brightness.dark,
+              statusBarIconBrightness: Brightness.dark,
+            ),
+            elevation: 0),
       ),
-      home: const LoginScreen(),
-      // OnBoardingScreen(),
+      home:  OnBoardingScreen(),
     );
   }
 }

@@ -114,10 +114,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   const SizedBox(
                     height: 20,
                   ),
-                  mainButton(
-                    context: context,
-                    targetScreen: LoginScreen(),
-                    text: 'Get Started',
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: MediaQuery.of(context).size.width * 0.05),
+                    child: mainButton(
+                      context: context,
+                      targetScreen: const LoginScreen(),
+                      text: 'Get Started',
+                    ),
                   ),
                   const SizedBox(
                     height: 10,
@@ -147,7 +151,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         ),
                       ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ],
